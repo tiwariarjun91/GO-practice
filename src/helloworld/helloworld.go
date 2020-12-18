@@ -16,4 +16,4 @@ func main() {
 // gofmt filename:- formats the file properly and outputs on the command line
 // gofmt -w filename :- formats and saves the changes
 // go build filename :- creates executable .exe file but saves in the same directory
-
+// set GOPATH=C:\Users\arjun\Desktop\GO tutorial 

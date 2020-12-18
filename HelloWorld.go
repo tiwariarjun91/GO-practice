@@ -1,12 +1,13 @@
 package main
+
 import (
 	"fmt"
 	"strings"
 )
 
-    func main() {
+func main() {
 
-	            fmt.Println("Hello World !!!!")
+	fmt.Println("Hello World !!!!")
 	fmt.Println("This is your second commit")
-fmt.Println(strings.ToUpper("Hello from me to your world, really loud"))
+	fmt.Println(strings.ToUpper("Hello from me to your world, really loud"))
 }

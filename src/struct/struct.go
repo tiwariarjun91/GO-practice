@@ -5,7 +5,7 @@ import(
 )
 
 type Person struct{
-	Name string
+	Name string // do not require var keyword while defining fields in the struct
 	Age int
 
 

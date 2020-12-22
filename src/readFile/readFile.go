@@ -18,6 +18,7 @@ func main(){
 	errorChecker(err)
 	fmt.Println(ln)
 
+
 	cont, err := ioutil.ReadFile("./readFile.txt")
 	errorChecker(err)
 
@@ -26,6 +27,16 @@ func main(){
 	stringContent := string(cont)
 
 	fmt.Println("\nContent in string :- ", stringContent)
+
+	/*file1, err := os.Open("./readFile.txt")
+
+	errorChecker(err)
+	defer file1.Close()
+
+	ln1, err := io.WriteString(file1, content)
+
+	errorChecker(err)
+	fmt.Println(ln1)*/
 
 
 

@@ -39,6 +39,13 @@ func main(){
 		fmt.Println("President no ",j," :-", indianPresident[j],"\n")
 	}
 
+	// Iteration with both the key and value
+	fmt.Println("\nIteration with a range function // both key and value\n")
+
+	for k, v:= range indianPresident{
+		fmt.Println("President no ",k,":- ",v)
+	}
+
 
 
 }

@@ -1,4 +1,5 @@
 // Removing elements from the map
+// Problem 2 and 16(STD in and STD out)
 package main
 
 import(

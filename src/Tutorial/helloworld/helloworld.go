@@ -21,3 +21,17 @@ func main() {
 // set GOPATH=C:\Users\arjun\Desktop\GO tutorial 
 // go install //on command prompt generates a .exe file in the bin folder of workspace 
 // ToUppercase function
+
+/*
+	GOPATH	
+		/src
+			/github.com
+				/username
+					/repo
+			/bitbucket.com
+				/username
+					/repo
+			/gitlab.com
+				/username
+					/repo   
+							*/ // this is how github works

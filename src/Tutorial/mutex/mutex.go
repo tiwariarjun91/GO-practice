@@ -1,27 +1,27 @@
-package main // go cannot run non main package
+package main
 
 import(
 	"fmt"
 	"sync"
 )
 
-var(
+var (
 	balance int
-	mut sync.Mutex
+	mutex sync.Mutex
 )
 
-func Deposit(value int, wg *sync.WaitGroup ){
-	mut.Lock()
-	defer mut.Unlock()
-	fmt.Printf("Depositing %v amount in account with balance %v\n",value,balance)
+func Deposit(value int, wg *sync.WaitGroup){
+	mutex.Lock()
+	defer mutex.Unlock()
+	fmt.Printf("value: %v, balance: %v, Operaiton: Deposit",value,balance)
 	balance += value
 	wg.Done()
 }
 
-func Withdraw(value int, wg *sync.WaitGroup ){
-	mut.Lock()
-	defer mut.Unlock()
-	fmt.Printf("Withdrawing %v amount in account with balance %v\n",value,balance)
+func Withdraw(value int, wg *sync.WaitGroup){
+	mutex.Lock()
+	defer mutex.Unlock()
+	fmt.Printf("value: %v, balance: %v, Operaiton: Withdraw",value,balance)
 	balance -= value
 	wg.Done()
 }
@@ -33,6 +33,6 @@ func main(){
 	Withdraw(700,&wg)
 	Deposit(500,&wg)
 	wg.Wait()
+	fmt.Printf("Final balance: %v",balance)
 
-	fmt.Printf("Final balance amount is %v \n",balance)
 }

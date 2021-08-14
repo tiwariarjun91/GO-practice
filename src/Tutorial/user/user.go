@@ -1,10 +1,13 @@
 package user
+import(
+	"Tutorial/doer"
+)
 
-type User Struct{
+type User struct{
 	Doer doer.Doer
 }
 
-func (u *User) use() error{
+func (u *User) Use() int{
 
-	return u.Doer.DoSomething(123, "Arjun")
+	return u.Doer.DoSomething(123, 25)
 }
